@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLTI - National Law Training Institute</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">NLTI</div>
+            <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" id="loginBtn">Login</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </nav>
+
+    </header>
+
+    <div id="loginModal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeLogin()">&times;</button>
+      <h2>Welcome Back!</h2>
+      <p>Sign in to continue to National Law Training Institute.</p>
+      <form>
+        <label>Email</label>
+        <input type="email" placeholder="Enter Email" required>
+        <label>Password</label>
+        <input type="password" placeholder="Enter Password" required>
+        <button type="submit">Log In</button>
+      </form>
+      <p style="text-align:center; margin-top:1rem;">Don't have an account? <a href="#">Signup now</a></p>
+    </div>
+  </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Crack CLAT with NLTI</h1>
+            <p>Get mentored by NLSIU students who have cracked CLAT with flying colors. Join India's most trusted CLAT coaching with proven results.</p>
+            <a href="#courses" class="cta-button">Start Your Journey</a>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">NLS & NALSAR Selections</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">NLU Selections</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Mentorship Support</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">6/10</div>
+                <div class="stat-label">Top AILET Ranks</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="about" class="features">
+        <div class="features-container">
+            <h2 class="section-title">Why Choose NLTI?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3 class="feature-title">Expert Mentors</h3>
+                    <p class="feature-description">Learn from NLSIU students who have successfully cracked CLAT and understand the exam inside out.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3 class="feature-title">Real-time Doubt Solving</h3>
+                    <p class="feature-description">Get your doubts resolved instantly via Telegram chat and live concept sessions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3 class="feature-title">Comprehensive Material</h3>
+                    <p class="feature-description">Access high-quality study materials and practice tests designed by top performers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3 class="feature-title">Study Groups</h3>
+                    <p class="feature-description">Join like-minded study buddies for competitive learning and resource sharing.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Mock Tests</h3>
+                    <p class="feature-description">Practice with our comprehensive mock test series that simulates the actual exam.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3 class="feature-title">Proven Results</h3>
+                    <p class="feature-description">Join thousands of successful students who have achieved their dream ranks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="testimonials-container">
+            <h2 class="section-title">Student Success Stories</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"NLTI helped me throughout my CLAT and AILET prep. The mocks are amazing and the mentorship is truly wonderful. I'm really grateful!"</p>
+                    <p class="testimonial-author">- Avilokita Kesharwani, AIR 1</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"In an ocean of coaching institutes, NLTI was like a homely island. The personal mentorship they provided was exceptional."</p>
+                    <p class="testimonial-author">- Aditya Bhargava, NLSIU</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The diversity in mock tests and minute guidance made all the difference. NLTI's approach is truly revolutionary."</p>
+                    <p class="testimonial-author">- Priya Sharma, NALSAR</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="courses-container">
+            <h2 class="section-title">Our Courses</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-header">
+                        <h3 class="course-title">CLAT 2026 Platinum</h3>
+                        <div class="course-price">₹25,000</div>
+                    </div>
+                    <div class="course-body">
+                        <ul class="course-features">
+                            <li>Complete Mentorship Program</li>
+                            <li>Comprehensive Test Series</li>
+                            <li>24/7 Doubt Support</li>
+                            <li>Live Strategy Sessions</li>
+                            <li>Study Group Access</li>
+                        </ul>
+                        <button class="course-button">Enroll Now</button>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-header">
+                        <h3 class="course-title">CLAT 2026 Silver</h3>
+                        <div class="course-price">₹15,000</div>
+                    </div>
+                    <div class="course-body">
+                        <ul class="course-features">
+                            <li>Test Series Access</li>
+                            <li>Weekly Doubt Sessions</li>
+                            <li>Study Materials</li>
+                            <li>Performance Analysis</li>
+                            <li>Group Mentorship</li>
+                        </ul>
+                        <button class="course-button">Enroll Now</button>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-header">
+                        <h3 class="course-title">NLSAT 2026 Complete</h3>
+                        <div class="course-price">₹20,000</div>
+                    </div>
+                    <div class="course-body">
+                        <ul class="course-features">
+                            <li>NLSAT Specific Training</li>
+                            <li>Mock Tests & Analysis</li>
+                            <li>Personal Mentorship</li>
+                            <li>Current Affairs Updates</li>
+                            <li>Interview Preparation</li>
+                        </ul>
+                        <button class="course-button">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>NLTI</h3>
+                <p>National Law Training Institute is an initiative started by NLSIU students to provide honest and comprehensive CLAT mentorship at accessible prices.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#results">Results</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Courses</h3>
+                <ul>
+                    <li><a href="#">CLAT 2026</a></li>
+                    <li><a href="#">NLSAT 2026</a></li>
+                    <li><a href="#">AILET 2026</a></li>
+                    <li><a href="#">CUET PG Law</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li>📧 info@clatnlti.com</li>
+                    <li>📱 +91 9876543210</li>
+                    <li>💬 Telegram Support</li>
+                    <li>🌐 www.clatnlti.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 NLTI - National Law Training Institute. All rights reserved.</p>
+        </div>
+    </footer>  
+    <!-- Login Modal -->
+<div id="loginModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:2000; justify-content:center; align-items:center;">
+  <div style="background:#fff; padding:2rem; border-radius:10px; max-width:400px; width:90%; position:relative;">
+    <h2 style="text-align:center; margin-bottom:1rem;">Welcome Back!</h2>
+    <p style="text-align:center; margin-bottom:2rem;">Sign in to continue to National Law Training Institute.</p>
+    <form>
+      <label>Email</label>
+      <input type="email" placeholder="Enter Email" style="width:100%; padding:0.75rem; margin-bottom:1rem; border:1px solid #ccc; border-radius:5px;" required>
+      <label>Password</label>
+      <input type="password" placeholder="Enter Password" style="width:100%; padding:0.75rem; margin-bottom:1rem; border:1px solid #ccc; border-radius:5px;" required>
+      <button type="submit" style="width:100%; padding:0.75rem; background:#5b63e7; color:#fff; border:none; border-radius:5px; cursor:pointer;">Log In</button>
+    </form>
+    <p style="text-align:center; margin-top:1rem;">Don't have an account? <a href="#" style="color:#5b63e7;">Signup now</a></p>
+    <button onclick="closeLogin()" style="position:absolute; top:10px; right:10px; background:none; border:none; font-size:1.2rem; cursor:pointer;">&times;</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
